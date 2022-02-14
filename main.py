@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request
 
-#tri
-####
-#tri & meesamA
+#trisentosa, meesamA
 # SeniorDesign Lab 1
 
 app = Flask(__name__)
