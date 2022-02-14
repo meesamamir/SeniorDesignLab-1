@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 
 #tri
+####
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "asdcbsxnxacdaskchds" #encrypts cookies and session data related to website, it can be whatever we want
 
