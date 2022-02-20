@@ -2,30 +2,51 @@
 
 {% block content %}
 <html>
-    <h1>This is the home page</h1>
+    <h1>ECE:4880 Lab # 1</h1>
 
     <head>
         <meta charset="UTF-8">
-        <title>Welcome to FizzBuzz</title>
-        <link rel="stylesheet" href="{{url_for('static', filename= 'css/main.css')}}" >
+        <title>ECE:4880 Lab # 1</title>
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename= 'css/main.css')}}" > -->
     </head>
 
     <body>
-        <h4>Title</h4>
-<!--        <a href = "mailto: meesamamir-syed@uiowa.edu">meesamamir-syed@uiowa.edu</a>-->
+        <h4>Temperature Sensor Web App</h4>
 
-        <form action="/results" method="post">
-            <h2>🐝🥂 The classic FizzBuzz problem! 🥂🐝</h2>
-            <p>This program will print integers 1 to N, but it prints "Fizz" if an <br>
-                integer is divisible by 3, "Buzz" if an integer is divisible by 5, <br>
-                and "FizzBuzz" if an integer is divisible by both, 3 and 5 </p>
+        <form action="/" method="post">
+            <h2>h2 Text </h2>
+            <p>p Text <br>
+                p Text <br>
+                p Text </p>
             <br>
-            <p>Enter the integer, N</p>
 
-            <input type="text" inputmode="numeric" placeholder="Enter N..." name="int_input" required>
-            <input type="submit" value="GENERATE" id="generate" >
+            <!-- Temp data from database -->
+            <p>Temp in C = {{tempC}}</p> 
+            <p>Temp in C = {{tempF}}</p> 
 
-            <pre>{{results}}</pre>
+
+            <!-- <script>
+                Add firebase config here ?
+            </script> -->
+
+            <!-- <pre>Temp in F = {{tempF}}</pre> -->
+            <!-- retrieves ouput from results function -->
+
+            
+            <input type="button" value="Temperature in F" id="tempButton" >
+            <
+            <script>
+                const btn = document.getElementById("tempButton");
+                btn.addEventListener("click", ()=>{
+                    if(btn.value === "Temperature in F"){
+                        btn.value = "Temperature in C";
+
+                    }else{
+                        btn.value= "Temperature in F";
+                    }})
+            </script>
+
+            
 
         </form>
     </body>
