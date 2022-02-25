@@ -1,66 +1,118 @@
-h2{
-    text-align: center;
-    color: black;
-    font: -apple-system-body ;
-    font-family: "Helvetica Neue", serif;
-    font-size: 2.1em;
+h2 {
+  text-align: center;
+  color: black;
+  font: -apple-system-body;
+  font-family: "Helvetica Neue", serif;
+  font-size: 2.1em;
 }
 
-h4{
-    line-height: 0.2;
-    text-align: center;
-    color: black;
-    font: -apple-system-body ;
-    font-family: "Helvetica Neue", serif;
-    font-size: 1.2em
-
+h4 {
+  line-height: 0.2;
+  text-align: center;
+  color: black;
+  font: -apple-system-body;
+  font-family: "Helvetica Neue", serif;
+  font-size: 1.2em;
 }
 
-a{
-    line-height: 0.5;
-    text-align: center;
-    color: black;
-    font: -apple-system-body ;
-    font-family: "Helvetica Neue", serif;
-    font-size: 1.1em
-
+a {
+  line-height: 0.5;
+  text-align: center;
+  color: black;
+  font: -apple-system-body;
+  font-family: "Helvetica Neue", serif;
+  font-size: 1.1em;
 }
 
 p {
-    text-align: center;
-    animation: ease;
-    color: black;
-    font: -apple-system-body ;
-    font-family: "Helvetica Neue", serif;
-    font-size: 1.5em;
+  text-align: center;
+  animation: ease;
+  color: black;
+  font: -apple-system-body;
+  font-family: "Helvetica Neue", serif;
+  font-size: 1.5em;
 }
 
-input{
-    font: caption;
-    font-size: 1.2em;
-    width: 200px;
-    height: 30px;
-    border-radius: 8px;
-    text-align: center;
+input {
+  font: caption;
+  font-size: 1.2em;
+  width: 200px;
+  height: 30px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-pre{
-    font-size: 1.5em;
-    text-align: center;
+pre {
+  font-size: 1.5em;
+  text-align: center;
 }
 
-table{
-    font-size: 1.5em;
-    text-align: center;
+table {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 /*Button*/
-#tempButton{
-    background-color: white;
-    color: black;
+#tempButton {
+  background-color: white;
+  display: block;
+  color: black;
+  margin: auto;
 }
 /*Hover action on the button*/
 #tempButton:hover {
-    cursor: pointer;
-    background-color: lightyellow;
+  cursor: pointer;
+  background-color: lightyellow;
+}
+
+#metricButton {
+  background-color: white;
+  display: block;
+  color: black;
+  margin: auto;
+}
+/*Hover action on the button*/
+#metricButton:hover {
+  cursor: pointer;
+  background-color: lightyellow;
+}
+
+/* temperature display */
+#tempDisplay {
+  margin: auto;
+  margin-top: 20px;
+  width: 30vw;
+  height: 10vh;
+  background-color: rgb(51, 51, 51);
+  border: 2px greenyellow solid;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+/* graph */
+#graph {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-vertical {
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: center;
+  width: 3em;
+}
+
+.btn-grp {
+  margin-top: 15%;
+}
+
+/* anything in this div is center */
+.centerDiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
