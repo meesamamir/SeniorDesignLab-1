@@ -80,12 +80,12 @@ function update() {
 
     //10-50c or 50-122 f
     displayCondition =
-      result["sensor"] === "True" && result["sensor"] === "True";
+      result["sensor"] === "True" && result["switch"] === "True";
     console.log(displayCondition);
     if (displayCondition) {
       if (result["metric"] == "celcius") {
         $("#tempDisplay").text(result["tempC"] + "°" + "C");
-        yScale.domain([10, 50]);
+        yScale.domain([-10, 50]);
         g.selectAll("g.yaxis").call(d3.axisLeft(yScale));
         dataset = datasetC;
       } else {
@@ -127,4 +127,4 @@ function update() {
       .style("stroke-width", "1");
   });
 }
-// setInterval(update, 1000);
+setInterval(update, 1000);
